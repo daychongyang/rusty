@@ -1,12 +1,13 @@
-use std::io;
-
 fn main() {
-    println!("Guess the number!");
-    println!("Please input your guess:");
-    let mut guess = String::new();
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line.");
-
-    println!("You guessed: {}", guess)
+    // 整型
+    let decimal = 98_222;
+    println!("decimal: {}", decimal);
+    let hex = 0xff;
+    println!("hex: {}", hex);
+    let octal = 0o77;
+    println!("octal: {}", octal);
+    let binary = 0b0000_0010;
+    println!("binary: {}", binary);
+    let byte = b'A';
+    println!("byte: {}", byte);
 }
