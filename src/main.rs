@@ -1,8 +1,11 @@
 fn main() {
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let (x, y, z) = tup;
+    let x = 5;
+    let y = {
+        let x = 3;
+        x + 1
+    };
 
     println!("x is {}", x);
+
     println!("y is {}", y);
-    println!("z is {}", z);
 }
