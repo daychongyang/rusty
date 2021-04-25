@@ -1,6 +1,8 @@
-use rusty::vector;
-
 fn main() {
-    vector::create();
-    vector::read();
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = tup;
+
+    println!("x is {}", x);
+    println!("y is {}", y);
+    println!("z is {}", z);
 }
