@@ -1,11 +1,14 @@
 fn main() {
-    let x = 5;
-    let y = {
-        let x = 3;
-        x + 1
-    };
+    let number = 13;
+    if number < 5 {
+        println!("number 小于 5");
+    } else if number > 10 {
+        println!("number 大于 10");
+    } else {
+        println!("number 大于 5 小于等于 10")
+    }
 
-    println!("x is {}", x);
+    let number = if number > 10 { 1 } else { -1 };
 
-    println!("y is {}", y);
+    println!("number is {}", number);
 }
